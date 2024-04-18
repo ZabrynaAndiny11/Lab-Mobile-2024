@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#F0EBE3">
+
+        <ImageView
+            android:id="@+id/iv_row"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Profile"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#003C43"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_row"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@+id/tv_profile"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_marginLeft="200dp"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/rv_header">
+
+        <ImageView
+            android:id="@+id/IV_Profile"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bunga1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/TV_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Flowerr"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#003C43"
+        android:layout_below="@+id/cv_profile"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/TV_username"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="flow.error"
+        android:textSize="20sp"
+        android:textColor="#003C43"
+        android:layout_marginTop="-20dp"
+        android:layout_below="@+id/TV_name"/>
+</RelativeLayout>
